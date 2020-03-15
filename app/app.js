@@ -1,4 +1,4 @@
-const parenturl = "http://api.expensiveonlineschools.com";
+const parenturl = "https://api.expensiveonlineschools.com";
 
 function change_str(result) {
 	var str = result.split(/[ -]+/);
