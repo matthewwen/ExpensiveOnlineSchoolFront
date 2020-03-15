@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Expensive Online School</title>
+    <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <nav>
+        <div class="basic_header">
+            <h1>Expensive Online Schools</h1>
+        </div>
+    </nav>
+
+    <div class="container">
+        <p>
+            This website complies a list of around 8K schools, and lists which schools
+            decided to move their classes online. This website is NOT ENTIRELY ACCURATE, 
+            but if there is a mistake, YOU CAN REPORT IT and the website will be updated.
+        </p>
+	
+        <form class="search_college_form">
+            <input id="search-bar" type="text" placeholder="Search College" oninput="input_search()">
+        </form>
+    	<table id="school-list"></table>
+    </div>
+
+    <footer>
+        Copyright 2020 Matthew Wen
+    </footer>
+</body>
+<script src="cdn/jquery-1.11.0.min.js" charset="utf-8"></script>
+<script src="app/app.js" charset="utf-8"></script>
+<script src="app/main.js" charset="utf-8"></script>
+
+</html>

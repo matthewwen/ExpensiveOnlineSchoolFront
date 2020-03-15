@@ -1,0 +1,147 @@
+.basic_header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  height: fit-content;
+  display: flex;
+  flex-flow: left;
+  justify-content: space-between;
+  padding-bottom: 0px;
+  padding-top: 0px; }
+  .basic_header h1 {
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 0px; }
+
+footer {
+  padding: 10px;
+  text-align: center; }
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Montserrat', 'sans-serif'; }
+
+#href-list {
+  visibility: hidden; }
+
+#post-screen {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  top: 0px;
+  background-color: rgba(0, 0, 0, 0.2); }
+  #post-screen div {
+    margin: 0 auto;
+    padding: 1px; }
+    #post-screen div div {
+      background-color: white;
+      width: fit-content;
+      width: -moz-min-content;
+      max-width: calc(100% - 60px);
+      margin: 0 auto;
+      padding: 5px 5px; }
+      #post-screen div div h1 {
+        margin-bottom: 5px;
+        margin-left: 20px; }
+      #post-screen div div .input-screen {
+        width: fit-content;
+        width: -moz-min-content; }
+        #post-screen div div .input-screen input {
+          padding: 2px;
+          margin: 5px 0px;
+          font-size: 1em;
+          max-width: 100%;
+          height: 41px;
+          border-width: thin;
+          border-color: #000;
+          width: 424px; }
+      #post-screen div div .action-screen {
+        display: flex;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: 30px;
+        padding: 0px; }
+        #post-screen div div .action-screen button {
+          flex-flow: row-reverse;
+          background: #993333;
+          border: none;
+          padding: 10px;
+          margin-top: 5px;
+          margin-bottom: 5px;
+          color: #FFF;
+          margin-left: 10px; }
+
+.container {
+  width: 80%;
+  margin: 2rem auto;
+  text-decoration: none; }
+  .container .center_h1 {
+    margin: 0 auto;
+    text-align: center; }
+  .container .flags {
+    display: flex; }
+    .container .flags div {
+      flex-flow: row;
+      margin: 10px;
+      padding: 10px 10px;
+      background-color: gray;
+      color: #fff; }
+  .container a {
+    text-decoration: none; }
+  .container h3 {
+    color: #000;
+    text-decoration: none; }
+  .container p {
+    margin: 1rem 0; }
+  .container table, .container td, .container th {
+    border: 1px solid #ddd;
+    text-align: left; }
+  .container table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    word-wrap: break-all; }
+  .container th, .container td {
+    padding: 15px; }
+  .container table tr {
+    width: 100px; }
+  .container table tr td div {
+    overflow: auto; }
+  .container .mini_td_online {
+    color: white;
+    background-color: green; }
+  .container .mini_td_offline {
+    color: white;
+    background-color: red; }
+  .container h1, .container h2, .container h3, .container h4 {
+    margin: 20px 0; }
+  .container .search_college_form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 100%;
+    background: #f1f1f1; }
+
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+                   /* Non-prefixed version, currently
+supported by Chrome, Opera and Firefox */
+  -webkit-tap-highlight-color: transparent; }
+
+/*# sourceMappingURL=master.css.map */

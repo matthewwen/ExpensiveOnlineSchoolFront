@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title id="title"></title>
+    <link rel="stylesheet" href="master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+
+<body>
+    <nav>
+        <div class="basic_header">
+            <h1 id="nav-title"></h1>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="flags">
+            <div id="online-flag"></div> <div id="ref-flag">Add Reference</div>
+        </div>
+    	<table id="href-list">
+    		<tr>
+    			<th>School Name</th>
+    		</tr>
+    		
+    	</table>
+    	<table id="href-list">
+    		<tr>
+    			<th>References</th>
+    		</tr>
+    	</table>
+    </div>
+    <div id="post-screen">
+        <div>
+            <div>
+                <h1>Post</h1>
+                <div class="input-screen"> 
+                    <input type=text id="ref-name" placeholder="Reference Name"></input>
+                    <br>
+                    <input type=text id="ref-link" placeholder="References Link"></input>
+                    <br>
+                </div>
+                <div class="action-screen">
+                    <button id="ref-post-online" class="ref-close">ONLINE</button>
+                    <button id="ref-post-not-online" class="ref-close">NOT ONLINE</button>
+                    <button class="ref-close">CANCEL</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>Copyright 2020 Matthew Wen</footer>
+</body>
+<script src="cdn/jquery-1.11.0.min.js" charset="utf-8"></script>
+<script src="app/app.js" charset="utf-8"></script>
+<script src="app/school.js" charset="utf-8"></script>
+</html>
