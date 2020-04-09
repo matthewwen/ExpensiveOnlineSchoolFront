@@ -4,7 +4,7 @@ const collegeId = urlParams.get('collegeid');
 $(document).ready(function () {
 	$.ajax({
         type: 'GET',
-		url: parenturl + "/detail?collegeid=" + collegeId,
+		url: parenturl + "/detail?id=" + collegeId,
 		success: function (result) {
             console.log(result);
             $("#title").html(change_str(result.name));

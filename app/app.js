@@ -1,4 +1,4 @@
-const parenturl = "https://api.expensiveonlineschools.com";
+const parenturl = "https://www.matthewwen.com/apiexposchool";
 
 function change_str(result) {
 	var str = result.split(/[ -]+/);
@@ -35,7 +35,6 @@ function post_data(id, msg, href, b){
 }
 
 function search_college(search) {
-	console.log("hello")
 	$.ajax({
         type: 'GET',
 		url: parenturl + "/search?query=" + search,
