@@ -172,15 +172,23 @@ body {
 	}
 
 	.search_college_form{
+		display: flex;
 		input[type=text] {
 			padding: 10px;
   			font-size: 17px;
   			border: 1px solid grey;
   			float: left;
-  			width: 100%;
+			width: calc(100% - 20px);
   			background: #f1f1f1;
 		}
 
+	}
+	#searching-college{
+		width: 100%;
+		text-align: center;
+		font-size: large;
+		font-weight: bold;
+		display: none;
 	}
 }
 

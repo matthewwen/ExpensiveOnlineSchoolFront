@@ -3,12 +3,5 @@ $(document).ready(function () {
 });
 
 function input_search() {
-    var val = $("#search-bar").val();
-    if (val == ""){
-        on_start();
-    }
-    else {
-        search_college(val)
-        console.log(val);
-    }
+    searching_college($("#search-bar"));
 }

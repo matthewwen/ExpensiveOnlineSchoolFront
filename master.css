@@ -120,13 +120,21 @@ body {
     background-color: red; }
   .container h1, .container h2, .container h3, .container h4 {
     margin: 20px 0; }
-  .container .search_college_form input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid grey;
-    float: left;
+  .container .search_college_form {
+    display: flex; }
+    .container .search_college_form input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: calc(100% - 20px);
+      background: #f1f1f1; }
+  .container #searching-college {
     width: 100%;
-    background: #f1f1f1; }
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    display: none; }
 
 .noselect {
   -webkit-touch-callout: none;

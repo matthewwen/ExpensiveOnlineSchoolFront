@@ -34,14 +34,33 @@ function post_data(id, msg, href, b){
 	});
 }
 
+function searching_college(element) {
+		$("#school-list").css("visibility", "hidden");
+		$("#searching-college").css("display", "block");
+
+		setTimeout(function() {
+			search_college(element.val());
+		}, 1000);
+}
+
+var RUNNING = false;
 function search_college(search) {
-	$.ajax({
-        type: 'GET',
-		url: parenturl + "/search?query=" + search,
-		success: function (result) {
-            update_main_view(result);
-		}
-	});
+	if (search == "") {
+		on_start();
+	}
+	else if (RUNNING == false) {
+		RUNNING = true;
+		$.ajax({
+			type: 'GET',
+			url: parenturl + "/search?query=" + search,
+			success: function (result) {
+				$("#searching-college").css("display", "none");
+				$("#school-list").css("visibility", "visible");
+				update_main_view(result);
+				RUNNING = false;
+			}
+		});
+	}
 }
 
 function update_main_view(result) {
